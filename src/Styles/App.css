@@ -14,20 +14,13 @@ body {
 
 .text-box1 {
   background-color: #2757a4;
+  box-sizing: border-box;
+  height: 297px;
   padding: 25px;
-  margin: 25px;
+  width: 50vw;
+  line-height: 1.8rem;
   margin-right: 0;
   animation: fade-in 2s;
-  border-radius: 10px;
-}
-
-.text-box2 {
-  background-color: #2757a4;
-  padding: 25px;
-  margin: 25px;
-  margin-right: 0;
-  animation: fade-in 2s;
-  animation-delay: 4s;
   animation-fill-mode: both;
   border-radius: 10px;
 }

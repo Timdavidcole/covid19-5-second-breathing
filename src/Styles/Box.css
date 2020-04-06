@@ -1,12 +1,10 @@
 .box-container {
-    display: inline-block;
-    position: relative;
     width: 297px;
     height: 297px;
     background-color: white;
     border-radius: 10px;
     animation: fade-in 2s;
-    animation-delay: 8s;
+    animation-delay: 5s;
     animation-fill-mode: both;
     margin: 25px;
 }
@@ -41,10 +39,10 @@
         100% 0,
         100% 100%,
         0 100%;
-    animation: appear-box 16s infinite;
+    animation: appear-box 20s infinite;
     animation-timing-function: linear;
     animation-play-state: running;
-    animation-delay: 8s;
+    animation-delay: 5s;
     animation-fill-mode: backwards;
 }
 
@@ -68,9 +66,9 @@
         99.5% 0,
         100% 100%,
         0 100%;
-    animation: disappear-box 16s infinite;
+    animation: disappear-box 20s infinite;
     animation-timing-function: linear;
-    animation-delay: 8s;
+    animation-delay: 5s;
     animation-play-state: running;
     animation-fill-mode: backwards;
 }

@@ -7,7 +7,7 @@ export default class StageCompleted extends React.Component {
 
     this.state = {
       stage: 1,
-      visible: false
+      visible: false,
     };
 
     this.instructionChooser = this.instructionChooser.bind(this);
@@ -27,9 +27,9 @@ export default class StageCompleted extends React.Component {
   timer() {
     setInterval(() => {
       this.setState(({ stage }) => ({
-        stage: stage + 1
+        stage: stage + 1,
       }));
-    }, 16000);
+    }, 20000);
   }
 
   componentWillUnmount() {
@@ -39,11 +39,7 @@ export default class StageCompleted extends React.Component {
   instructionChooser() {
     const { stage, visible } = this.state;
     if (stage === 5) {
-      return (
-        <h3>
-          Congratulations, you've finished.
-        </h3>
-      );
+      return <h3>Congratulations, you've finished.</h3>;
     } else if (visible) {
       return <h2>Stage {`${stage}`} completed</h2>;
     }

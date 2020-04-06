@@ -9,8 +9,8 @@
     font-size: 35px;
     text-align: center;
     color: #34d0eb;
-    animation: text-color 16s infinite, fade-in-fade-out 8s infinite;
-    animation-delay: 12s;
+    animation: text-color 20s infinite, fade-in-fade-out 10s infinite;
+    animation-delay: 7s;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.543);
 }
 

@@ -32,7 +32,7 @@ export default class Timer extends React.Component {
           seconds: seconds + 1
         }));
       }
-      if (seconds === 4) {
+      if (seconds === 5) {
         this.setState(() => ({
           seconds: 1
         }));

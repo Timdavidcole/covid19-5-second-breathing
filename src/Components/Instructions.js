@@ -37,7 +37,7 @@ export default class Instructions extends React.Component {
           interval: 4
         }));
       }
-    }, 4000);
+    }, 5000);
   }
 
   componentWillUnmount() {
