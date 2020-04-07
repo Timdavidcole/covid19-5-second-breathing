@@ -16,8 +16,8 @@ export default class StageCompleted extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(this.start, 28000);
-    setTimeout(this.timer, 28000);
+    setTimeout(this.start, this.props.counter * 4000);
+    setTimeout(this.timer, this.props.counter * 4000);
   }
 
   start() {
@@ -29,7 +29,7 @@ export default class StageCompleted extends React.Component {
       this.setState(({ stage }) => ({
         stage: stage + 1,
       }));
-    }, 20000);
+    }, this.props.counter * 3000);
   }
 
   componentWillUnmount() {
@@ -38,16 +38,27 @@ export default class StageCompleted extends React.Component {
 
   instructionChooser() {
     const { stage, visible } = this.state;
-    if (stage === 5) {
-      return <h3>Congratulations, you've finished.</h3>;
+    if (stage === 6) {
+      return "Congratulations, you've finished.";
     } else if (visible) {
-      return <h2>Stage {`${stage}`} completed</h2>;
+      return `Breath ${stage} completed`;
     }
   }
 
   render() {
     return (
-      <div className="stage-completed-text">{this.instructionChooser()} </div>
+      <div className="stage-completed-text">
+        <h2
+          style={{
+            animation: `text-color ${
+              this.props.counter * 4
+            }s infinite, fade-in-fade-out ${this.props.counter * 4}s infinite`,
+            animationDelay: `${this.props.counter}s`,
+          }}
+        >
+          {this.instructionChooser()}
+        </h2>{" "}
+      </div>
     );
   }
 }

@@ -48,13 +48,16 @@ export default class Timer extends React.Component {
     const { seconds, visible } = this.state;
     if (visible) {
       return (
-        <div
-          className="timer"
-          style={{
-            animation: `text-color ${this.props.counter * 4}s infinite, fade-out 1s infinite`,
-          }}
-        >
-          <h1>{seconds}</h1>
+        <div className="timer">
+          <h1
+            style={{
+              animation: `text-color ${
+                this.props.counter * 4
+              }s infinite, fade-out 1s infinite`,
+            }}
+          >
+            {seconds}
+          </h1>
         </div>
       );
     } else return null;

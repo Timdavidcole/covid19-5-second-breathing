@@ -6,8 +6,8 @@ export default class Instructions extends React.Component {
     super(props);
 
     this.state = {
-      interval: 4,
-      getReady: true
+      interval: 3,
+      getReady: true,
     };
 
     this.instructionChooser = this.instructionChooser.bind(this);
@@ -21,7 +21,7 @@ export default class Instructions extends React.Component {
   }
 
   start() {
-    this.setState({ getReady: false })
+    this.setState({ getReady: false });
   }
 
   timer() {
@@ -29,12 +29,12 @@ export default class Instructions extends React.Component {
       const { interval } = this.state;
       if (interval > 0) {
         this.setState(({ interval }) => ({
-          interval: interval - 1
+          interval: interval - 1,
         }));
       }
       if (interval === 1) {
         this.setState(() => ({
-          interval: 4
+          interval: 3,
         }));
       }
     }, 5000);
@@ -47,17 +47,30 @@ export default class Instructions extends React.Component {
   instructionChooser() {
     const { interval, getReady } = this.state;
     if (getReady) {
-      return <h2>Get ready...</h2>;
-    } else if (interval === 4) {
-      return <h2>Breathe in</h2>;
-    } else if (interval === 2) {
-      return <h2>Breathe out</h2>;
+      return "Get ready...";
+    } else if (interval === 3) {
+      return "Deep breath in";
+    } else if (interval === 1) {
+      return "And breathe out";
     } else {
-      return <h2>Hold</h2>;
+      return "Hold";
     }
   }
 
   render() {
-    return <div className="instructions">{this.instructionChooser()} </div>;
+    return (
+      <div className="instructions">
+        <h2
+          style={{
+            animation: `text-color ${
+              this.props.counter * 4
+            }s infinite, fade-in-fade-out 10s infinite`,
+            animationDelay: `${this.props.counter}s`,
+          }}
+        >
+          {this.instructionChooser()}
+        </h2>{" "}
+      </div>
+    );
   }
 }

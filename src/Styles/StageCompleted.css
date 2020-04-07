@@ -1,25 +1,14 @@
 .stage-completed-text {
     position: absolute;
-    top: 70vh;
+    top: 78vh;
     width: 100%;
 }
 
 .stage-completed-text h2 {
-    font-size: 4vmax;
+    font-size: 3vmax;
     text-align: center;
     color: #34d0eb;
-    animation: text-color 16s infinite, fade-in-fade-out 16s infinite;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.543);
-}
-
-.stage-completed-text h3 {
-    font-size: 15px;
-    text-align: center;
-    color: #34d0eb;
-    animation: text-color 16s infinite, fade-in-fade-out 16s infinite;
-    text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.543);
-    padding: 5px;
-    box-sizing: border-box;
 }
 
 @keyframes text-color {

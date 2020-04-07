@@ -7,16 +7,17 @@ body {
 }
 
 .text-box1 {
+  z-index: 6;
   position: absolute;
   left: 5vw;
   top: 5vh;
   background-color: #2757a4;
   box-sizing: border-box;
   min-height: 30vh;
-  max-height: 60vh;
-  padding: 3vmin;
+  max-height: 50vh;
+  padding: 2vmin;
   width: 90vw;
-  font-size: 1.6vmax;
+  font-size: 1.5vmax;
   animation: fade-in 2s;
   animation-fill-mode: both;
   border-radius: 10px;

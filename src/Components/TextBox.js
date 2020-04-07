@@ -33,10 +33,6 @@ export default class TextBox extends React.Component {
             seconds.
           </li>
           <li>
-            <span style={{ color: "#fae200" }}>Hold</span> your breath for five
-            seconds.
-          </li>
-          <li>
             <span style={{ color: "#fae200" }}>Repeat</span> this 6 times...
           </li>
           <li>
@@ -50,8 +46,7 @@ export default class TextBox extends React.Component {
           Afterwards,{" "}
           <span style={{ color: "#fae200" }}>lie down on your front</span>,
           breathing deeper that usual for at least
-          <span style={{ color: "#fae200" }}> 10 minutes</span>. Stay safe
-          everyone.
+          <span style={{ color: "#fae200" }}> 10 minutes</span>.
         </span>
         <br></br>
         <br></br>
