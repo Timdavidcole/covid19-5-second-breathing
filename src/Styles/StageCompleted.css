@@ -6,7 +6,7 @@
 }
 
 .stage-completed-text h2 {
-    font-size: 3vmax;
+    font-size: 2rem;
     text-align: center;
     color: #34d0eb;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.543);
@@ -40,8 +40,19 @@
 }
 
 @keyframes fade-in-fade-out {
-    0%   { opacity:0; }
-    10%  { opacity:1; }
-    90%  { opacity:1; }
-    100% { opacity:0; }
-  }
+    0% {
+        opacity: 0;
+    }
+
+    10% {
+        opacity: 1;
+    }
+
+    90% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}

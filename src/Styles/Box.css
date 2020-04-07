@@ -22,16 +22,15 @@
     height: 100%;
     position: absolute;
     z-index: 3;
-    box-sizing: border-box;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, #2757a4 0%, #2757a4 100%),
         linear-gradient(to bottom, #2757a4 0%, #34d0eb 100%),
         linear-gradient(to left, #34d0eb 0%, #34d0eb 100%),
         linear-gradient(to top, #34d0eb 0%, #2757a4 100%);
-    background-size: 200% 20px,
-        20px 100%,
-        100% 20px,
-        20px 100%;
+    background-size: 100% 5vw,
+        5vw 100%,
+        100% 5vw,
+        5vw 100%;
     background-position: 0 0,
         100% 0,
         100% 100%,
@@ -52,12 +51,12 @@
         linear-gradient(to bottom, white 100%, white 100%),
         linear-gradient(to left, white 100%, white 100%),
         linear-gradient(to top, white 100%, white 100%);
-    background-size: 100% 12px,
-        12px 100%,
-        100% 12px,
-        12px 100%;
+    background-size: 100% 5vw,
+        5vw 100%,
+        100% 5vw,
+        5vw 100%;
     background-position: 0 0,
-    100% 0,
+        100% 0,
         100% 100%,
         0 100%;
     animation-timing-function: linear;
@@ -67,102 +66,102 @@
 
 @keyframes appear-box {
     0% {
-        background-size: 0 10px,
-            10px 100%,
-            0 10px,
-            10px 0;
+        background-size: 0 5vw,
+            5vw 100%,
+            0 5vw,
+            5vw 0;
     }
 
     25% {
-        background-size: 0 10px,
-            10px 100%,
-            100% 10px,
-            10px 0%;
+        background-size: 0 5vw,
+            5vw 100%,
+            100% 5vw,
+            5vw 0%;
     }
 
     50% {
-        background-size: 0 10px,
-            10px 0,
-            100% 10px,
-            10px 100%;
+        background-size: 0 5vw,
+            5vw 0,
+            100% 5vw,
+            5vw 100%;
     }
 
     75% {
-        background-size: 100% 10px,
-            10px 0,
-            0 10px,
-            10px 100%;
+        background-size: 100% 5vw,
+            5vw 0,
+            0 5vw,
+            5vw 100%;
     }
 
     100% {
-        background-size: 100% 10px,
-            10px 100%,
-            0 10px,
-            10px 0;
+        background-size: 100% 5vw,
+            5vw 100%,
+            0 5vw,
+            5vw 0;
     }
 }
 
 @keyframes disappear-box {
     0% {
-        background-size: 100% 12px,
-            12px 0,
-            0 12px,
-            12px 0;
+        background-size: 100% 5vw,
+        5vw 0,
+            0 5vw,
+            5vw 0;
     }
 
     5% {
-        background-size: 100% 12px,
-            12px 20%,
-            0 12px,
-            12px 0;
+        background-size: 100% 5vw,
+        5vw 20%,
+            0 5vw,
+            5vw 0;
     }
 
     25% {
-        background-size: 100% 12px,
-            12px 100%,
-            0 12px,
-            12px 0;
+        background-size: 100% 5vw,
+            5vw 100%,
+            0 5vw,
+            5vw 0;
     }
 
     30% {
-        background-size: 0 12px,
-            12px 100%,
-            20% 12px,
-            12px 0;
+        background-size: 0 5vw,
+            5vw 100%,
+            20% 5vw,
+            5vw 0;
     }
 
     50% {
-        background-size: 0 12px,
-            12px 100%,
-            100% 12px,
-            12px 0;
+        background-size: 0 5vw,
+            5vw 100%,
+            100% 5vw,
+            5vw 0;
     }
 
     55% {
-        background-size: 0 12px,
-            12px 0,
-            100% 12px,
-            12px 20%;
+        background-size: 0 5vw,
+            5vw 0,
+            100% 5vw,
+            5vw 20%;
     }
 
     75% {
-        background-size: 0 12px,
-            12px 0,
-            100% 12px,
-            12px 100%;
+        background-size: 0 5vw,
+            5vw 0,
+            100% 5vw,
+            5vw 100%;
     }
 
     80% {
-        background-size: 20% 12px,
-            12px 0,
-            0 12px,
-            12px 100%;
+        background-size: 20% 5vw,
+            5vw 0,
+            0 5vw,
+            5vw 100%;
     }
 
     100% {
-        background-size: 100% 12px,
-            12px 0,
-            0 12px,
-            12px 100%;
+        background-size: 100% 5vw,
+            5vw 0,
+            0 5vw,
+            5vw 100%;
     }
 }
