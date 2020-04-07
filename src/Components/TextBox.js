@@ -1,5 +1,7 @@
 import React from "react";
 import "../Styles/App.css";
+import { Textfit } from 'react-textfit';
+
 
 export default class TextBox extends React.Component {
   constructor(props) {
@@ -11,7 +13,7 @@ export default class TextBox extends React.Component {
   }
   render() {
     return (
-      <div className="text-box1">
+      <Textfit className="text-box1" mode="multi">
         <span>
           This <span style={{ color: "#fae200" }}>breathing technique</span> is
           advocated to help clear your lungs, and lower your risk of developing
@@ -51,7 +53,7 @@ export default class TextBox extends React.Component {
         <br></br>
         <br></br>
         <span>Stay safe everyone.</span>
-      </div>
+      </Textfit>
     );
   }
 }

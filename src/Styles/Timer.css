@@ -1,7 +1,8 @@
 .timer {
     position: absolute;
-    top: 65vh;
+    top: 15vh;
     width: 100%;
+    z-index: 7;
 }
 
 .timer h1 {

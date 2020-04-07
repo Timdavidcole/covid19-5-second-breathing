@@ -1,7 +1,8 @@
 .instructions {
     position: absolute;
     width: 100%;
-    top: 55vh;
+    top: 5vh;
+    z-index: 7;
 }
 
 .instructions h2 {

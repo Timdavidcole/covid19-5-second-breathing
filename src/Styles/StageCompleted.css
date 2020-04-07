@@ -1,7 +1,8 @@
 .stage-completed-text {
     position: absolute;
-    top: 78vh;
+    top: 28vh;
     width: 100%;
+    z-index: 7;
 }
 
 .stage-completed-text h2 {
