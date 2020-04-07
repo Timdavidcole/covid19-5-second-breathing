@@ -16,8 +16,8 @@ export default class Instructions extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(this.start, 12000);
-    setTimeout(this.timer, 12000);
+    setTimeout(this.start, this.props.counter * 1000);
+    setTimeout(this.timer, this.props.counter * 1000);
   }
 
   start() {

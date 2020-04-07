@@ -1,12 +1,11 @@
 .stage-completed-text {
     position: absolute;
-    top: 65%;
+    top: 70vh;
     width: 100%;
-    margin: 5px;
 }
 
 .stage-completed-text h2 {
-    font-size: 25px;
+    font-size: 4vmax;
     text-align: center;
     color: #34d0eb;
     animation: text-color 16s infinite, fade-in-fade-out 16s infinite;
@@ -20,6 +19,7 @@
     animation: text-color 16s infinite, fade-in-fade-out 16s infinite;
     text-shadow: 0px 0px 7px rgba(255, 255, 255, 0.543);
     padding: 5px;
+    box-sizing: border-box;
 }
 
 @keyframes text-color {

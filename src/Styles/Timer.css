@@ -1,15 +1,13 @@
 .timer {
     position: absolute;
-    top: 16%;
+    top: 60vh;
     width: 100%;
-    margin: 5px;
 }
 
 .timer h1 {
-    font-size: 80px;
+    font-size: 5vmax;
     text-align: center;
     color: #34d0eb;
-    animation: text-color 16s infinite, fade-out 1s infinite;
 }
 
 @keyframes text-color {

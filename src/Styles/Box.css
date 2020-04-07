@@ -1,6 +1,7 @@
 .box-container {
     width: 100vw;
     height: 100vh;
+    box-sizing: border-box;
     border-radius: 10px;
     animation: fade-in 2s;
     animation-fill-mode: both;
@@ -21,15 +22,16 @@
     height: 100%;
     position: absolute;
     z-index: 3;
+    box-sizing: border-box;
     background-repeat: no-repeat;
     background-image: linear-gradient(to right, #2757a4 0%, #2757a4 100%),
         linear-gradient(to bottom, #2757a4 0%, #34d0eb 100%),
         linear-gradient(to left, #34d0eb 0%, #34d0eb 100%),
         linear-gradient(to top, #34d0eb 0%, #2757a4 100%);
-    background-size: 96% 10px,
-        10px 96%,
-        96% 10px,
-        10px 96%;
+    background-size: 100% 20px,
+        20px 100%,
+        100% 20px,
+        20px 100%;
     background-position: 0 0,
         100% 0,
         100% 100%,
@@ -55,7 +57,7 @@
         100% 12px,
         12px 100%;
     background-position: 0 0,
-        99.5% 0,
+    100% 0,
         100% 100%,
         0 100%;
     animation-timing-function: linear;

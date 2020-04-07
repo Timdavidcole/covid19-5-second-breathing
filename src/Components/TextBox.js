@@ -11,7 +11,7 @@ export default class TextBox extends React.Component {
   }
   render() {
     return (
-      <div className="text-box1" style={{ top: "100px" }}>
+      <div className="text-box1">
         <span>
           This <span style={{ color: "#fae200" }}>breathing technique</span> is
           advocated to help clear your lungs, and lower your risk of developing

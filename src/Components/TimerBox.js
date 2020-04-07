@@ -9,20 +9,18 @@ export default class TimerBox extends React.Component {
     return (
       <div
         className="box-container"
-        style={{ animationDelay: `${this.props.counter}s` }}
+        // style={{ animationDelay: `${this.props.counter}s` }}
       >
         <div
           className="box-main"
           style={{
             animation: `appear-box ${this.props.counter * 4}s infinite`,
-            animationDelay: `${this.props.counter}s`,
           }}
         ></div>
         <div
           className="box-white"
           style={{
             animation: `disappear-box ${this.props.counter * 4}s infinite`,
-            animationDelay: `${this.props.counter}s`,
           }}
         ></div>
         <Instructions counter={this.props.counter} />

@@ -7,7 +7,7 @@ export default class Timer extends React.Component {
 
     this.state = {
       seconds: 1,
-      visible: false
+      visible: false,
     };
 
     this.timer = this.timer.bind(this);
@@ -15,8 +15,8 @@ export default class Timer extends React.Component {
   }
 
   componentDidMount() {
-    setTimeout(this.hide, 12000);
-    setTimeout(this.timer, 12000);
+    setTimeout(this.hide, this.props.counter * 1000);
+    setTimeout(this.timer, this.props.counter * 1000);
   }
 
   hide() {
@@ -29,12 +29,12 @@ export default class Timer extends React.Component {
 
       if (seconds > 0) {
         this.setState(({ seconds }) => ({
-          seconds: seconds + 1
+          seconds: seconds + 1,
         }));
       }
       if (seconds === 5) {
         this.setState(() => ({
-          seconds: 1
+          seconds: 1,
         }));
       }
     }, 1000);
@@ -48,10 +48,15 @@ export default class Timer extends React.Component {
     const { seconds, visible } = this.state;
     if (visible) {
       return (
-        <div className="timer">
+        <div
+          className="timer"
+          style={{
+            animation: `text-color ${this.props.counter * 4}s infinite, fade-out 1s infinite`,
+          }}
+        >
           <h1>{seconds}</h1>
         </div>
       );
-    } else return null
+    } else return null;
   }
 }
